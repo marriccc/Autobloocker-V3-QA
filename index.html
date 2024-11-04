@@ -11,20 +11,20 @@
       "nodes": [
  {
         "serviceIds": ["cfADcn3E3"],
-        "id": "vp-preview",
+        "id": "vimeo",
         "src": "https://player.vimeo.com/video/744979938?h=e4e0289444&app_id=122963",
         "hash": ""
       },
       {
         "serviceIds": ["IdaQw5cVN"],
-        "id": "airtable-embed",
+        "id": "airtable",
         "src": "https://airtable.com/embed/shr1JTAfJbR8eS3cc?backgroundColor=blue",
         "hash": 3137723246116
       },
       {
         "serviceIds": ["BJz7qNsdj-7"],
         "src": "https://www.youtube-nocookie.com/embed/DWcJFNfaw9c",
-        "hash": 3833054841046
+        "hash": 3833054641046
       },
       {
         "serviceIds": ["BJTzqNi_i-m"],
@@ -33,8 +33,9 @@
       },
       {
         "serviceIds": ["r1Fhc4iOoWX"],
+        "id": "maps",
         "src": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d42550.78176913606!2d11.6391936!3d48.198451199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sde!4v1627274483897!5m2!1sen!2sde",
-        "hash": 8630259286843
+        "hash": 8630259286803
       },
       {
         "serviceIds": ["rcfADcn3E3"],
@@ -44,7 +45,7 @@
       },
       {
         "serviceIds": ["ko1w5PpFl"],
-        "id": "container",
+        "id": "testScript",
         "src": "//js.hsforms.net/forms/v2.js",
         "hash": 17409650328696
       }
@@ -56,43 +57,15 @@
  <script id="usercentrics-cmp" src="https://web.cmp.usercentrics-sandbox.eu/ui/pr/623/loader.js" data-settings-id="YkvkwoTJ430min" async></script>
 
 
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N2T2JQX');</script>
-  <!-- End Google Tag Manager -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-  <style>
-    h1 {
-      background-color: #123456;
-      color: #987654;
-    }
-    
-    .roboto {
-     font-family: 'Roboto', sans-serif; 
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2T2JQX"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
   This test page should verify that different functionalities of our CMP are working.
 
   <h1> Vimeo </h1>
   <p> This is an embedding from Vimeo</p>
-  <iframe src="https://player.vimeo.com/video/744979938?h=e4e0289444&app_id=122963" width="426" height="240" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Produktvideo"></iframe>
+  <iframe src="https://player.vimeo.com/video/744979938?h=e4e0289444&app_id=122963" id="vimeo" width="426" height="240" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Produktvideo"></iframe>
   
   <h1> Airtable </h1>
   <p> This is an embedding from Airtable</p>
-  <iframe class="airtable-embed" src="https://airtable.com/embed/shr1JTAfJbR8eS3cc?backgroundColor=blue" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+  <iframe class="airtable-embed" src="https://airtable.com/embed/shr1JTAfJbR8eS3cc?backgroundColor=blue" id="airtable" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
   
   <h1> YouTube Embedding </h1>
   <p>The page should refresh, once the Technology is accepted.</p>
@@ -119,7 +92,7 @@ charset="utf-8"></script>
 
   
   <h1> Google Maps Embedding </h1>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d42550.78176913606!2d11.6391936!3d48.198451199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sde!4v1627274483897!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d42550.78176913606!2d11.6391936!3d48.198451199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sde!4v1627274483897!5m2!1sen!2sde" id="maps" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   
   <h1> HubSpot Forms without iFrame </h1>
   <p>The page should reload, after consent was revoked.</p>
@@ -145,8 +118,5 @@ charset="utf-8"></script>
   <h1> reCAPTCHA V2 simulation </h1>
   <p>This is just a picture, which should be unblocked, if reCAPTCHA V3 consent is given.</p>
   <img src="https://developers.google.com/static/recaptcha/images/newCaptchaAnchor.gif" id="reCaptchaV3" width="560">
-  
-  <div id="usercentricsDSRForm"></div><script src="https://dsr.consent.usercentrics-staging.eu/dsr_url.js"
-    dsr_text="Request your Data"></script>
   </body>
 </html>

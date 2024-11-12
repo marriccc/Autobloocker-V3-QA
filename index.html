@@ -37,19 +37,6 @@
         </iframe>
     </div>
     
-    <script src="https://sdk.scdn.co/spotify-player.js"></script>
-    <script>
-        window.onSpotifyIframeApiReady = (IFrameAPI) => {
-            const element = document.getElementById('spotify-embed');
-            const options = {
-                uri: 'spotify:track:5OTm5evU4sWv5BmZLz6Yt5'
-            };
-            IFrameAPI.createController(element, options).then(controller => {
-               
-                controller.play();
-            });
-        };
-    </script>
 
   
   <h1> Twitter Embedding </h1>
